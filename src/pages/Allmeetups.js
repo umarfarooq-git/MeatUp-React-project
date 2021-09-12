@@ -25,9 +25,9 @@ function Allmeetups()
     return (
         <section>
         <h1>All meetups</h1>
-        <ul>
+     
             <Meetuplist meetups={DUMMY_DATA}/>
-        </ul>
+
         </section>
         );
 }
