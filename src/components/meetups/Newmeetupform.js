@@ -1,17 +1,17 @@
-import { useRef } from "react";
+import { useRef } from "react";       //builtin hook ref to read the form data on submission.
 import classes from "./Newmeetupform.module.css";
 import Card from "../ui/Card";
 
 function Newmeetupform(props) {
-  const titleinputref = useRef();
+  const titleinputref = useRef();   //initilization of ref hooks.
   const imageinputref = useRef();
   const addressinputref = useRef();
   const descriptioninputref = useRef();
 
   function submithandler(event) {
-    event.preventDefault();
+    event.preventDefault();          //it stops the browser default and let us to handle the form submission by our way.
 
-    const enteredtitle = titleinputref.current.value;
+    const enteredtitle = titleinputref.current.value;      //Assigning values to ref hooks.
     const enteredimage = imageinputref.current.value;
     const enteredaddress = addressinputref.current.value;
     const entereddescription = descriptioninputref.current.value;

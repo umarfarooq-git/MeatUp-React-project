@@ -14,7 +14,7 @@ function Newmeetups()
                 }
             }
         ).then(() => {
-            history.replace('/');
+            history.replace('/'); //replace is to go previous page. to go on a new page history.push() is used.
         });
     }
     return <section>
